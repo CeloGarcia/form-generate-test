@@ -1,0 +1,134 @@
+html {
+    /* font-size: var(--base-font-size); */
+    font-size: var(--rem-adaptive);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    margin:0;
+    font-family:var(--bs-font-sans-serif);
+    font-size:var(--base-font-size-rem);
+    font-weight:400;
+    line-height:1.5;
+    color: var(--bs-color-dark);
+    background-color:var(--bs-color-white);
+    -webkit-text-size-adjust:100%;
+    -webkit-tap-highlight-color:transparent;
+
+    background: url('../assets/background_dream.jpg') repeat 38px;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.material-icons,
+.material-icons-outlined {
+    font-size: 1.6rem;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18,
+.material-icons-outlined.md-18 {
+    font-size: 1.8rem;
+}
+.material-icons.md-24,
+.material-icons-outlined.md-24 {
+    font-size: 2.4rem;
+}
+.material-icons.md-36,
+.material-icons-outlined.md-36 {
+    font-size: 3.6rem;
+}
+.material-icons.md-48,
+.material-icons-outlined.md-48 {
+    font-size: 4.8rem;
+}
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark,
+.material-icons-outlined.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+}
+.material-icons.md-dark.md-inactive,
+.material-icons-outlined.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light,
+.material-icons-outlined.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+.material-icons.md-light.md-inactive,
+.material-icons-outlined.md-light.md-inactive {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.has-white-space-nowrap {
+    white-space: nowrap;
+}
+
+.is-borderless th,
+.is-borderless td {
+    border: none;
+}
+
+.overflow-x-auto {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table tr td:first-child,
+.table tr th:first-child {
+    border-left: none;
+}
+
+.table tr td:last-child,
+.table tr th:last-child {
+    border-right: none;
+}
+
+.has-text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.has-shadow-sm {
+    box-shadow:0 .2rem .4rem rgba(0,0,0,.075)!important;
+}
+
+.has-shadow-lg {
+    box-shadow:0 1.6rem 4.8rem rgba(0,0,0,.175)!important;
+}
+
+.has-shadow-none {
+    box-shadow:none!important;
+}
+
+.section {
+    padding: 2.4rem 2.4rem;
+}
+
+.box:not(:last-child),
+.content:not(:last-child),
+.notification:not(:last-child),
+.progress:not(:last-child),
+.table:not(:last-child),
+.table-container:not(:last-child),
+.title:not(:last-child),
+.subtitle:not(:last-child),
+.block:not(:last-child),
+.highlight:not(:last-child),
+.breadcrumb:not(:last-child),
+.level:not(:last-child),
+.message:not(:last-child),
+.pagination:not(:last-child),
+.tabs:not(:last-child) {
+    margin-bottom: 1.2rem;
+}

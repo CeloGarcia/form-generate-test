@@ -1,5 +1,3 @@
-image:
-  file: .gitpod.Dockerfile
-tasks:
-  - init: bash .gitpod-init.sh
-    command: /laravel php artisan migrate --seed && /laravel php artisan serve
+vscode:
+  extensions:
+    - onecentlin.laravel-blade@1.25.0:v9Oz26jwvUo5eyq8znO+Zw==
