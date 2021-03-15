@@ -1,3 +1,9 @@
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - before: cd laravel
+    init: bash .gitpod-init.sh
+    command: php artisan migrate --seed && php artisan serve
 vscode:
   extensions:
     - onecentlin.laravel-blade@1.25.0:v9Oz26jwvUo5eyq8znO+Zw==

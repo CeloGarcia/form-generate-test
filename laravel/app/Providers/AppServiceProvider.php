@@ -27,5 +27,7 @@ class AppServiceProvider extends ServiceProvider
         if (\Str::contains(\Config::get('app.url'), 'https://')) {
             \URL::forceScheme('https');
         }
+
+        // dd(asset('/styles'));
     }
 }
