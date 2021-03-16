@@ -1,0 +1,141 @@
+:root {
+    /* Fonts */
+    --base-font-size: 16px;
+    --base-font-size-rem: 1.6rem;
+
+    /*  AJUSTE REM
+        Adaptando rem para ser multiplo de 10 ao inves de 16
+
+        Exemplos:
+
+        16px = 1rem; // 1rem por padrão tem 16px;
+        1rem % 62,5 = 10px; // Ao utilizar o calculo de 62.5% (passar esse valor para font-size do html);
+        10px = 1rem // Podemos chegar num resultado de 1rem pra 10px (mais fácil de calcular)
+        16px = 1.6rem // Sendo assim 16px que era 1rem anteriormente agora é 1.6rem;
+
+        Alguns exemplos utilizados no Bulma
+        (Tamanho rem original - conversão em px - conversão de rem após cálculo)
+        0.25rem - 4px - 0.4rem
+        0.375rem - 6px - 0.6rem
+        0.5rem - 8px - 0.8rem
+        0.75rem - 12px - 1.2rem
+        0.875rem - 14px - 1.4rem
+        1rem - 16px - 1.6rem
+        1.25rem - 20px - 2rem
+        1.5rem - 24px - 2.4rem
+        1.75rem - 28px - 2.8rem;
+        2rem - 32px - 3.2rem
+        2.5rem - 40px - 4rem
+        3rem - 48px - 4.8rem
+        3.25rem - 52px - 5.2rem
+        5.25rem - 84px - 8.4rem
+        6rem - 96px - 9.6rem
+        9rem - 144px - 14.4rem
+        12rem - 192px - 19.2rem
+        18rem - 288px - 28.8rem
+    */
+    --rem-adaptive: 62.5%;
+    /* --bs-font-sans-serif:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+    --bs-font-sans-serif: 'Source Sans Pro', sans-serif;
+    --bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+
+    /* Colors */
+
+    --bs-color-white: #FFFFFF;
+    --bs-color-white-hover: #f9f9f9;
+    --bs-color-white-active: #f2f2f2;
+    --bs-secondary-white: #dee2e6;
+    --bs-color-white-opaque: #e9ecef;
+    --bs-color-black: #0a0a0a;
+    --bs-color-black-hover: #040404;
+    --bs-color-secondary-black: #302B2B;
+    --bs-color-gray: #D4D4D4;
+    --bs-color-secondary-white: #FAFAFA;
+    --bs-color-navy-blue: #426180;
+    --bs-color-navy-blue-dark: #3c5670;
+    --bs-color-navy-blue-darken: #36485a;
+    --bs-color-text-blue: #004B8A;
+    --bs-color-bg-blue-gray: #D7D7E4;
+    --bs-color-blue-link: #3273dc;
+    --bs-color-blue-link-hover: #276cda;
+    --bs-color-blue-link-active: #2366d1;
+    --bs-color-blue-link-secondary: #1c5cc4;
+
+    /* Special tag/properties colors */
+    --bs-color-mark: #fcf8e3;
+    --bs-color-a: #0d6efd;
+    --bs-color-a-hover: #0a58ca;
+    --bs-color-code: #da1039;
+    --bs-color-disabled: #7a7a7a;
+
+    --bs-color-blue:#0d6efd;
+    --bs-color-indigo:#6610f2;
+    --bs-color-purple:#6f42c1;
+    --bs-color-pink:#d63384;
+    --bs-color-red:#dc3545;
+    --bs-color-orange:#fd7e14;
+    --bs-color-yellow:#ffc107;
+    --bs-color-green:#198754;
+    --bs-color-teal:#20c997;
+    --bs-color-cyan:#0dcaf0;
+    --bs-color-cyan-disable:#86d6e6;
+    --bs-color-white:#fff;
+    --bs-color-gray-opaque:#b5b5b5;
+    --bs-color-gray-dark:#343a40;
+    --bs-color-primary:#0d6efd;
+    --bs-color-secondary:#680368;
+    --bs-color-secondary-hover:#5c055c;
+    --bs-color-secondary-active:#811e81;
+    --bs-color-success:#198754;
+    --bs-color-success-hover:#18804f;
+    --bs-color-success-active:#16794b;
+    --bs-color-success-secondary:#1e794e;
+    --bs-color-info:#0dcaf0;
+    --bs-color-info-hover:#0dbcdf;
+    --bs-color-info-active:#0eaccc;
+    --bs-color-info-secondary: #1d72aa;
+    --bs-color-warning:#ffc107;
+    --bs-color-warning-hover:#ebb206;
+    --bs-color-warning-active:#dfa806;
+    --bs-color-warning-secondary:#997300;
+    --bs-color-danger:#dc3545;
+    --bs-color-danger-hover:#e2283b;
+    --bs-color-danger-active:#e6192d;
+    --bs-color-danger-secondary:#c20a1c;
+    --bs-color-light:#f8f9fa;
+    --bs-color-light-hover:#eef3fc;
+    --bs-color-dark:#212529;
+    --bs-color-dark-hover:#2f2f2f;
+    --bs-color-dark-active:#292929;
+
+    /* Sizes */
+    --default-border-radius: 4px;
+
+
+    /* Etc */
+    --form-components-border-color: #ced4da;
+    --form-componentes-border-color-onfocus: #86b7fe;
+    --bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --file-upload-color-onhover: #dde0e3;
+    --bs-table-striped-bg: #F3F3F3;
+    --bs-table-striped-color: #212529;
+    --bs-table-hover-bg: #e0e0e0;
+    --bs-table-hover-color: #212529;
+
+    /* FTV */
+    --primary: #426180;
+    --primary-hover: #3c5670;
+    --primary-active: #36485a;
+    --primary-active-50-percent: #36485a50;
+    --primary-darken: #36485a;
+    --secondary: #680368;
+    --secondary-hover: #5c055c;
+    --secondary-active: #811e81;
+    --secondary-active-50-percent: #811e8150;
+    --bs-table-color: #212529;
+    --bs-table-border-color: #212529;
+
+    --bs-default-primary-white: #ebfffc;
+    --bs-default-primary-white-hover: #defffa;
+    --bs-default-primary-white-active: #d1fff8;
+}

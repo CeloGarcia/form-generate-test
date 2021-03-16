@@ -16,7 +16,7 @@ body {
     -webkit-text-size-adjust:100%;
     -webkit-tap-highlight-color:transparent;
 
-    background: url('../assets/background_dream.jpg') repeat 38px;
+    background: url('../source/background_dream.jpg') repeat 38px;
     background-attachment: fixed;
     overflow: hidden;
 }

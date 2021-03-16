@@ -2,7 +2,7 @@
     <div class="container-fluid is-relative px-5">
         <div id="mainMenu" class="mainMenu">
             <div class="mainMenu_logo">
-                <img src="assets/logo/ipm_1.png" alt="">
+                <img src="{{asset('source/logo/ipm_1.png')}}" alt="">
             </div>
             <ul class="mainMenu_list" onclick="event.stopPropagation();">
                 <li class="mainMenu_list-item" data-open="false">

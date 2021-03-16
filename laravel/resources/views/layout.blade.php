@@ -14,7 +14,9 @@
 <body class="preload">
     {{-- @yield('navbar') --}}
     @include('structure.menu')
-    @yield('content')
+    <section class="section">
+        @yield('content')
+    </section>
 </body>
 <script type="text/javascript" src="{{asset('scripts/script.js')}}"></script>
 </html>

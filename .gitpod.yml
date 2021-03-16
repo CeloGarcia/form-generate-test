@@ -1,8 +1,7 @@
 image:
   file: .gitpod.Dockerfile
 tasks:
-  - before: cd laravel
-    init: bash .gitpod-init.sh
+  - init: bash .gitpod-init.sh
     command: php artisan migrate --seed && php artisan serve
 vscode:
   extensions:
